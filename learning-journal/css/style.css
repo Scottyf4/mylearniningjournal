@@ -1,0 +1,571 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+a {
+  margin: 0;
+  padding: 0;
+}
+/* CSS for nav */
+
+nav {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  background: rgb(98, 9, 121);
+  background: linear-gradient(
+    56deg,
+    rgba(98, 9, 121, 1) 20%,
+    rgba(83, 0, 255, 1) 93%
+  );
+  color: white;
+}
+
+.nav-title-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-logo {
+  width: 1.45em;
+  opacity: 80%;
+  margin-right: 0.5em;
+}
+
+#nav-title {
+  font-family: "Roboto", system-ui;
+  font-size: 0.84rem;
+  font-weight: bold;
+  display: inline;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  font-family: "Rubik", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-right: 2em;
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+}
+
+li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* CSS for hero section Index.html*/
+
+.hero-section {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 0.8em;
+  background-image: url("/images/desk_at_night.jpg");
+  background-size: 100%;
+  background-position: center;
+}
+
+.hero-section img {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  bottom: 0;
+}
+
+.hero-content p,
+.hero-content h2 {
+  position: relative;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  max-width: 300px;
+  text-shadow: 1.5px 1.5px rgb(77, 76, 76);
+  color: white;
+}
+
+.hero-section p {
+  font-size: 0.9rem;
+  font-weight: 100;
+  padding-left: 0.8em;
+}
+
+.hero-section p:last-of-type {
+  margin-bottom: 1em;
+}
+
+.hero-section h2 {
+  font-size: 2rem;
+  padding-left: 0.4em;
+}
+
+/* CSS for blog artiles Index.html */
+
+.blog-posts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.blog-container {
+  width: 100%;
+  margin: auto auto;
+  border-bottom: 1px solid black;
+}
+
+.blog-img {
+  width: 100%;
+  margin-bottom: 0.95em;
+}
+
+.blog-container p,
+.blog-container h3 {
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-family: "Rubik", sans-serif;
+  /* max-width: 350px; */
+}
+
+.blog-container p {
+  font-size: 0.8rem;
+  font-weight: 100;
+  padding-bottom: 1em;
+}
+
+.blog-container h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* CSS for main artilce html */
+
+.main-section {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.head-date,
+.head-blurb {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+}
+
+.head-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+.head-date {
+  font-weight: 100;
+}
+
+.head-blurb {
+  font-weight: 300;
+}
+
+.head-img {
+  width: 100%;
+  margin-right: 20px;
+}
+
+.sub-title,
+.sub-content {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.sub-title {
+  font-weight: 600;
+}
+
+.recent-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* CSS for about me html */
+
+.main-section .scott-image {
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  border: 3px solid rgb(98, 9, 121);
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+}
+
+.about-main {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  margin-top: 0.7em;
+  letter-spacing: 0.6px;
+}
+
+.about-main h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.about-main h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* CSS for Footer element */
+
+.footer {
+  background: rgb(98, 9, 121);
+  background: linear-gradient(
+    56deg,
+    rgba(98, 9, 121, 1) 20%,
+    rgba(83, 0, 255, 1) 93%
+  );
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em;
+  margin-top: 2.6em;
+}
+
+.footer p {
+  margin: 0;
+  margin-top: 0.2em;
+  font-family: "Rubik", sans-serif;
+  font-size: 0.75rem;
+}
+
+.footer-title {
+  font-weight: bold;
+}
+
+@media (min-width: 800px) {
+  #nav-logo {
+    width: 2.5em;
+    margin-left: 1em;
+  }
+
+  #nav-title {
+    font-size: 2rem;
+  }
+
+  nav ul li {
+    font-size: 1.2rem;
+  }
+
+  .hero-content {
+    margin-top: 5em;
+  }
+
+  .hero-content p,
+  .hero-content h2 {
+    max-width: 500px;
+  }
+
+  .hero-section h2 {
+    font-size: 3.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.5rem;
+  }
+
+  .blog-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3em;
+    margin-right: 2em;
+    margin-left: 2em;
+    gap: 2em;
+  }
+
+  .blog-container {
+    height: 100%;
+    border-bottom: 1px solid black;
+  }
+  .blog-container p {
+    font-size: 1.2rem;
+  }
+
+  .blog-container h3 {
+    font-size: 2rem;
+  }
+
+  .head-title {
+    font-size: 3rem;
+  }
+  .head-date,
+  .head-blurb {
+    font-size: 1.5rem;
+  }
+
+  .sub-title {
+    font-size: 2rem;
+  }
+
+  .sub-content {
+    font-size: 1.2rem;
+  }
+
+  .recent-title {
+    font-size: 1.6rem;
+  }
+
+  .main-section .scott-image {
+    width: 11em;
+    height: 11em;
+  }
+
+  .about-main {
+    font-size: 1.4rem;
+  }
+
+  .about-main h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-main h2 {
+    font-size: 1.8rem;
+  }
+
+  .footer p {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  nav {
+    height: 6em;
+  }
+
+  #nav-logo {
+    width: 4em;
+    opacity: 100%;
+  }
+
+  #nav-title {
+    font-size: 3rem;
+    margin-left: 15px;
+  }
+
+  nav ul li {
+    font-size: 1.8rem;
+  }
+
+  .hero-section {
+    height: 35vh;
+    top: 0;
+  }
+  .hero-section img {
+    height: 35vh;
+    margin-bottom: 5em;
+  }
+
+  .hero-content p,
+  .hero-content h2 {
+    max-width: 800px;
+  }
+  .hero-section h2 {
+    font-size: 3rem;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+  }
+  .blog-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .blog-container p {
+    font-size: 1.7rem;
+  }
+
+  .blog-container h3 {
+    font-size: 1.8rem;
+  }
+  .head-title {
+    font-size: 5rem;
+  }
+  .head-date,
+  .head-blurb {
+    font-size: 1.8rem;
+  }
+  .sub-title {
+    font-size: 3rem;
+  }
+
+  .sub-content {
+    font-size: 1.8rem;
+  }
+
+  .recent-title {
+    font-size: 1.9rem;
+  }
+
+  .main-section .scott-image {
+    width: 14em;
+    height: 14em;
+  }
+
+  .about-main {
+    font-size: 1.5rem;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .about-main h1 {
+    font-size: 3.5rem;
+  }
+
+  .about-main h2 {
+    font-size: 2.6rem;
+  }
+
+  .footer p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  nav {
+    height: 6em;
+  }
+
+  #nav-logo {
+    width: 4em;
+    opacity: 100%;
+  }
+
+  #nav-title {
+    font-size: 2rem;
+    margin-left: 15px;
+  }
+
+  nav ul li {
+    font-size: 1.5rem;
+  }
+
+  .hero-section {
+    height: 60vh;
+  }
+
+  .hero-section img {
+    width: 100%;
+    top: 25;
+  }
+
+  .hero-content p,
+  .hero-content h2 {
+    max-width: 1400px;
+    padding-left: 200px;
+  }
+  .hero-section h2 {
+    font-size: 6rem;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+  }
+  .hero-section p {
+    font-size: 1.8rem;
+  }
+
+  .blog-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+  .blog-container img {
+    height: 355px;
+  }
+  .blog-container p {
+    font-size: 1.3rem;
+  }
+
+  .blog-container h3 {
+    font-size: 2.5rem;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
+  .head-title {
+    font-size: 3.5rem;
+  }
+  .head-date,
+  .head-blurb {
+    font-size: 1.8rem;
+  }
+
+  .head-img {
+    width: 70%;
+    height: 60vh;
+    margin-left: 15%;
+  }
+
+  .main-block {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  .sub-title {
+    font-size: 3rem;
+  }
+
+  .sub-content {
+    font-size: 1.8rem;
+  }
+
+  .recent-title {
+    font-size: 1.9rem;
+  }
+
+  .main-section .scott-image {
+    width: 8em;
+    height: 8em;
+  }
+
+  .about-main {
+    font-size: 1.8rem;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .about-main h1 {
+    font-size: 3.5rem;
+    margin-left: 1em;
+  }
+
+  .about-main h2 {
+    font-size: 2.6rem;
+  }
+
+  .footer p {
+    font-size: 1rem;
+  }
+}
